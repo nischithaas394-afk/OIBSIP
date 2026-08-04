@@ -1,94 +1,92 @@
-# Random Password Generator
+# Basic Weather App
 
-## 📌 Project Description
+## Description
+This is a Beginner Level Python Weather Application developed as part of the OASIS INFOBYTE Python Programming Internship.
 
-The Random Password Generator is a Python application that generates strong and random passwords based on user preferences. The user can choose the password length and the types of characters to include, such as uppercase letters, lowercase letters, numbers, and symbols.
+The application fetches real-time weather information for any city using the OpenWeatherMap API.
 
-This project was developed as part of the **OASIS INFOBYTE Python Programming Internship**.
+## Features
+- Enter any city name
+- Displays current temperature in Celsius
+- Displays current temperature in Fahrenheit
+- Shows humidity percentage
+- Shows weather condition
+- Shows wind speed
+- Handles invalid city names
+- Handles invalid API keys
+- Handles network errors
 
----
-
-## 🎯 Objective
-
-To generate secure random passwords according to user-defined criteria while validating user inputs.
-
----
-
-## 🚀 Features
-
-- User-defined password length
-- Minimum password length of 8 characters
-- Include uppercase letters
-- Include lowercase letters
-- Include numbers
-- Include special symbols
-- Ensures at least two character types are selected
-- Input validation for incorrect entries
-- Option to generate multiple passwords without restarting the program
-
----
-
-## 🛠️ Technologies Used
-
+## Technologies Used
 - Python 3
-- random module
-- string module
+- Requests Library
+- OpenWeatherMap API
 
----
-
-## ▶️ How to Run
-
-1. Open the project folder in Visual Studio Code.
-2. Open the terminal.
-3. Run the following command:
-
-```bash
-python password_generator.py
-```
-
-4. Enter the required inputs.
-5. The program will generate a secure random password.
-
----
-
-## 📷 Sample Output
+## Project Structure
 
 ```
-====================================
-    RANDOM PASSWORD GENERATOR
-====================================
-
-Enter password length (minimum 8): 12
-
-Select character types to include:
-Include Uppercase letters? (y/n): y
-Include Lowercase letters? (y/n): y
-Include Numbers? (y/n): y
-Include Symbols? (y/n): y
-
-Generated Password:
-A#7mP2!xQ9$L
-
-Generate another password? (y/n): n
-
-Thank you for using the Password Generator!
-```
-
----
-
-## 📂 Project Structure
-
-```
-Python-Task3-RandomPasswordGenerator/
-│── password_generator.py
+Python-Task4-BasicWeatherApp/
+│── weather_app.py
 │── README.md
 │── output.png
 ```
 
----
+## Installation
 
-## 👨‍💻 Author
+Install the required library:
 
-**Nischitha A S**
+```bash
+pip install requests
+```
+
+## How to Run
+
+Run the following command:
+
+```bash
+python weather_app.py
+```
+
+Enter the city name when prompted.
+
+Example:
+
+```
+Enter City Name: Goa
+```
+
+## Sample Output
+
+```
+========================================
+      BASIC WEATHER APPLICATION
+========================================
+
+Enter City Name: Goa
+
+========================================
+          WEATHER REPORT
+========================================
+City            : Goa
+Temperature (C) : 24.19 °C
+Temperature (F) : 75.54 °F
+Humidity        : 92%
+Weather         : Light Rain
+Wind Speed      : 1.94 m/s
+========================================
+```
+
+## Output Screenshot
+
+The project output screenshot is saved as:
+
+```
+output.png
+```
+
+## Author
+
+Nischitha A S
+
+## Internship
 
 OASIS INFOBYTE Python Programming Internship
